@@ -137,6 +137,7 @@ div.videos > iframe{
 }
 picture{
     margin: 0px;
+    padding: 0px;
 }
 aside{
     background-color: var(--cor02);
