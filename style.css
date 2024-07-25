@@ -1,0 +1,160 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+@font-face{
+    font-family:'android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor01:#b571d9;
+    --cor02:#7d7084;
+    --cor03:#879650;
+    --cor04:#919976;
+    --cor05:#555946;
+
+    --fonte-padrao: 'Times New Roman', Times, serif;
+    --fonte-destaque: 'Baskervville SC', 'cursive';
+    --fonte-android: 'android', 'cursive';
+}
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: var(--cor03);
+    font-family: var(--fonte-padrao);
+}
+margin p{
+    margin: 12px 0px;
+    text-align: justify;
+}
+header{
+    background-color: #555946;
+    color: white;
+    text-align: center;
+    min-height: 130px;
+    padding-top: 8px;
+}
+nav{
+    background-color: var(--cor02);
+    color: black;
+    padding: 8px;
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.466);
+}
+nav > a{
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+nav > a:hover{
+    background-color: var(--cor03);
+}
+header > h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.664);
+    margin-bottom: 20px;
+}
+header > p{
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;
+    padding: 10px;
+    margin: auto;
+    max-width: 600px;
+}
+main{
+    background-color: var(--cor04);
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 25px;
+    padding: 18px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.575);
+}
+main h1{
+    font-family: var(--fonte-android);
+    font-size: 1.7em;
+}
+main h2{
+    font-family: var(--fonte-android);
+    color: var(--cor05);
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 15px;
+    line-height: 1.5em;
+}
+main a{
+    text-decoration: none;
+    background-color: var(--cor05);
+    color: var(--cor01);
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 2px;
+}
+a.externo::after{
+    content: '\00a0\1F517';
+}
+main a:hover{
+    background-color: var(--cor01);
+    color: var(--cor05);
+}
+main strong{
+    color: var(--cor05);
+    background-color: #7d70844f;
+    font-weight: bold;
+}
+main > img{
+    width: 100%;
+}
+main.pequeno{
+    display: block;
+    margin: auto;
+    width: 50%;
+}
+div.videos{
+    background-color: var(--cor05);
+    position: relative;
+    padding: 25% 50%;
+    margin: auto;
+}
+div.videos > iframe{
+    position: absolute;
+    top: 9%;
+    left: 9%;
+    height: 80%;
+    width: 80%;
+}
+aside{
+    background-color: var(--cor02);
+    padding: 10px;
+    border-radius: 15px;
+    margin: 12px;
+    box-shadow: 0px 0px 7px black;
+}
+aside > h3{
+    background-color: var(--cor05);
+    text-indent: 10px;
+    border-radius: 9px;
+    font-size: 1.3em;
+}
+ul{
+    list-style-position: inside;
+    columns: 2;
+    list-style-type: '\2705\00a0\00a0';
+}
+footer{
+    background-color: var(--cor05);
+    text-align: center;
+    padding: 7px;
+}
