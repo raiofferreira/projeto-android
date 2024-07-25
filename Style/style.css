@@ -135,7 +135,7 @@ div.videos > iframe{
     height: 80%;
     width: 80%;
 }
-picture{
+picture > source{
     margin: 0px;
     padding: 0px;
     height: 150px;
