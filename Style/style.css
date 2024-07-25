@@ -135,11 +135,10 @@ div.videos > iframe{
     height: 80%;
     width: 80%;
 }
-picture > source{
-    margin: 0px;
+picture > img{
+    margin: auto;
+    align-items: center;
     padding: 0px;
-    height: 150px;
-    width: 150px;
 }
 aside{
     background-color: var(--cor02);
