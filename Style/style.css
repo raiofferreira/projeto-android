@@ -136,7 +136,7 @@ div.videos > iframe{
     width: 80%;
 }
 picture{
-    margin: auto;
+    margin-right: 300px;
     height: 450px;
     width: 450px;
 }
